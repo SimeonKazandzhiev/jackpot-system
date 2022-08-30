@@ -1,0 +1,110 @@
+
+### make a bet
+POST localhost:8080/bet/edffdfd5-8490-44a1-aa41-c3a759d505a8
+Content-Type: application/json
+
+{
+  "amount": 1000.000,
+  "casinoId": 2,
+  "playerId": 1
+}
+
+### CREATE NEW CASINO WITH LEVELS
+POST localhost:8080/casino/
+Content-Type: application/json
+
+{
+
+  "name": "Betano",
+  "jackpot": {
+    "triggerPercent": 5,
+    "numberOfLevels": 4,
+    "levels": [
+      {
+        "totalAmountCollected": 100.00000,
+        "percentOfBet": 0.01,
+        "startingAmount": 100.00,
+        "minimumAmountToBeWon": 200.00,
+        "winProbability": 50.00
+      },
+      {
+        "totalAmountCollected": 100.00000,
+        "percentOfBet": 0.05,
+        "startingAmount": 100.00,
+        "minimumAmountToBeWon": 200.00,
+        "winProbability": 15.00
+      },
+      {
+        "totalAmountCollected": 100.00000,
+        "percentOfBet": 0.02,
+        "startingAmount": 100.00,
+        "minimumAmountToBeWon": 200.00,
+        "winProbability": 30.00
+      },
+      {
+        "totalAmountCollected": 100.00000,
+        "percentOfBet": 0.06,
+        "startingAmount": 100.00,
+        "minimumAmountToBeWon": 200.00,
+        "winProbability": 5.00
+      }
+    ]
+  }
+}
+
+
+### update casino with its jackpot
+PUT localhost:8080/casino/update/
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "PalmsBet",
+  "jackpot": {
+    "id": 2,
+    "casinoId": 2,
+    "triggerPercent": 11,
+    "numberOfLevels": 4,
+    "levels": [
+      {
+        "id": 5,
+        "totalAmountCollected": 100.00000,
+        "percentOfBet": 0.480500,
+        "startingAmount": 100.00,
+        "minimumAmountToBeWon": 300.00,
+        "winProbability": 50.00,
+        "jackpotId": 2
+      },
+      {
+        "id": 6,
+        "totalAmountCollected": 100.00000,
+        "percentOfBet": 0.05,
+        "startingAmount": 100.00,
+        "minimumAmountToBeWon": 200.00,
+        "winProbability": 15.00,
+        "jackpotId": 2
+      },
+      {
+        "id": 7,
+        "totalAmountCollected": 100.00000,
+        "percentOfBet": 0.02,
+        "startingAmount": 100.00,
+        "minimumAmountToBeWon": 200.00,
+        "winProbability": 30.00,
+        "jackpotId": 2
+      },
+      {
+        "id": 8,
+        "totalAmountCollected": 100.00000,
+        "percentOfBet": 0.06,
+        "startingAmount": 100.00,
+        "minimumAmountToBeWon": 200.00,
+        "winProbability": 5.00,
+        "jackpotId": 2
+      }
+    ]
+  }
+}
+
+
+

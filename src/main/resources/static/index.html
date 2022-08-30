@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jackpot System</title>
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="app.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+<noscript>
+    <h2 style="color: #ff0000">Seems your browser doesn't support Javascript! Websocket relies on Javascript being
+        enabled. Please enable
+        Javascript and reload this page!</h2>
+</noscript>
+<div class="row">
+    <div class="col">
+        <nav class=" navbar navbar-dark bg-dark text-white ">
+            <!-- Navbar content -->
+            <form class=" form-inline offset-8">
+                <div class="form-group ">
+                    <label for="connect">Welcome to the best place to bet:</label>
+                    <button id="connect" class="btn btn-info" type="submit">Join</button>
+                    <button id="disconnect" class="btn btn-warning" type="submit" disabled="disabled">Logout
+                    </button>
+                </div>
+            </form>
+        </nav>
+    </div>
+</div>
+<div id="main-content" class="container">
+
+    <div class="row">
+        <div class="col-md-12 ">
+            <h1 class="table table-striped text-info">Casino`s Jackpots Levels In Real Time</h1>
+            <p id="all-levels" class="table table-striped text-warning"></p>
+
+            <h2 class="table table-striped text-info">Level Amounts</h2>
+            <p id="levels" class="table table-striped text-warning"></p>
+
+            <h2 class="table table-striped text-info">Bet Information</h2>
+            <p id="casinoName" class="table table-striped text-warning"></p>
+            <p id="playerIdentity" class="table table-striped text-warning"></p>
+            <p id="playerBalance" class="table table-striped text-warning"></p>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
