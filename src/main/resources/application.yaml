@@ -8,7 +8,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/jackpot_db?createDatabaseIfNotExist=true
     username: root
-    password: Breakdance900210
+    password: pass
   #JPA Properties
   jpa:
     show-sql: true
