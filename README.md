@@ -9,7 +9,8 @@ JDBI Declarative,
 WebSockets,
 Plain Java Synchronization,
 Junit,
-Mockito
+Mockito,
+Maven
 
 
 # Jackpot configuration
