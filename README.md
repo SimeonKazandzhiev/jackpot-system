@@ -2,13 +2,13 @@
 
 # Technological Stack
 
-Java 18
-Spring
-MySQL
-JDBI Declarative
-WebSockets
-Plain Java Synchronization
-Junit
+Java 18,
+Spring,
+MySQL,
+JDBI Declarative,
+WebSockets,
+Plain Java Synchronization,
+Junit,
 Mockito
 
 
