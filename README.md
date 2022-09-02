@@ -42,12 +42,6 @@ Also, a jackpot for an operator has these two global settings:
 is set to 5, then approximately 5% of all bets will trigger the jackpot. 
 ● Number of Levels - this is how many levels the jackpot will have 
 
-Also, a jackpot for an operator has these two global settings: 
-● Operator Identifier 
-● Jackpot trigger percentage - this is the probability to trigger a jackpot. For example, if this 
-is set to 5, then approximately 5% of all bets will trigger the jackpot. 
-● Number of Levels - this is how many levels the jackpot will have 
-
 
 # Bet placement 
 
