@@ -69,10 +69,12 @@ all configurations for all the levels. Let’s assume that there are 4 levels an
 respectively the percentage of the bet as follows: L1: 0.1%, L2: 0.2%, L3: 0.3%, L4: 0.4%. Let’s 
 also assume that the bet amount is 10. The following amounts will be deducted from the bet and 
 placed into the different jackpot levels for the given operator: 
+
 Level 1: +0.01 
 Level 2: +0.02 
 Level 3: +0.03 
 Level 4: +0.04 
+
 The workflow of winning any of the jackpot levels starts with checking the Jackpot trigger 
 percentage upon every bet. If the percentage is met, then the next step is to collect information 
 for each level’s Win probability and decide at random which jackpot level should be checked 
