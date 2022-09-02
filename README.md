@@ -54,8 +54,11 @@ jackpot. Let’s assume that there is a separate system that manages the bets de
 slot game and that this system sends the bet information to a RESTFul service of our jackpot. 
 
 The data sent will be in JSON format and have the following attributes: 
+
 ● Bet Amount
+
 ● Player Identifier 
+
 ● Operator Identifier
 
 
