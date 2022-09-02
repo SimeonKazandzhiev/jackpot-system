@@ -16,7 +16,8 @@ public class JackpotConditionManager {
     private final JackpotService jackpotService;
     private final PlayerService playerService;
 
-    public JackpotConditionManager(LevelService levelService, JackpotService jackpotService, PlayerService playerService) {
+    public JackpotConditionManager(final LevelService levelService, final JackpotService jackpotService,
+                                   final PlayerService playerService) {
         this.levelService = levelService;
         this.jackpotService = jackpotService;
         this.playerService = playerService;
@@ -28,7 +29,7 @@ public class JackpotConditionManager {
             Level randomPickedWinningLevel = levelService.getRandomWinningLevel(jackpot.getLevels());
             boolean isMinAmountToWinMet = jackpotService.isInWinCondition(randomPickedWinningLevel.getMinimumAmountToBeWon(),
                     randomPickedWinningLevel.getTotalAmountCollected());
-            if(isMinAmountToWinMet){
+            if (isMinAmountToWinMet) {
                 playerService.payoutToPlayer(player, randomPickedWinningLevel.getTotalAmountCollected().add(bet.getAmount()));
                 JackpotCacheManager.recoverLevelsInCache(jackpot);
             }
