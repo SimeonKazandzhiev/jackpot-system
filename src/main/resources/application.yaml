@@ -1,6 +1,6 @@
 server:
   application:
-    name: REST MVC Demo
+    name: Jackpot System
   port: 8080
 
 spring:
@@ -8,7 +8,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/jackpot_db?createDatabaseIfNotExist=true
     username: root
-    password: Breakdance900210
+    password: pass
   #JPA Properties
   jpa:
     show-sql: true
@@ -47,8 +47,8 @@ management:
 info:
   app:
     encoding: "UTF-8"
-    name: REST MVC Demo
-    description: REST MVC demo with Spring Boot and Spring Data JPA
+    name: Jackpot System
+    description: Jackpot System
     version: 1.0-SNAPSHOT
 logging:
   level:
